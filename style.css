@@ -1,0 +1,341 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(0,0,0,0.1);
+}
+
+.left a {
+    margin-right: 15px; 
+    text-decoration: none;
+    color: black;
+    
+}
+
+.right p {
+    margin: 0 10px; 
+    display: inline;
+}
+.fa {
+    margin-left: 5px; 
+}
+section{
+    display: flex;
+    justify-content: space-between;
+}
+section .icons{
+    margin-top: 30px;
+    margin-right: 70px;
+    display: flex;
+}
+section .icons p{
+    padding-left: 20px;
+}
+section .icons i{
+    color: pink;
+}
+
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; 
+    background-color: white; 
+    padding: 10px;
+    border-right: 1px solid #ccc; 
+}
+
+.nav-item {
+    text-decoration: none; 
+    color: black; 
+    padding: 10px;
+    position: relative; 
+}
+.nav-item:hover {
+    color: pink; 
+}
+.nav-item::after {
+    font-size: 0.8em; 
+    vertical-align: middle; 
+    margin-left: 5px;
+}
+.img{
+    position: absolute;
+    right: 500px;
+    top: 3%;
+}
+.container{
+    position: relative;
+    height: 500px;
+}
+.para{
+    font-size: 50px;
+    position: absolute;
+    top: 3%;
+    left: 500px;
+}
+.cap{
+    font-size: 50px;
+    position: absolute;
+    top: 70%;
+    left: 250px;
+}
+.u{
+    position: absolute;
+    top: 450px;
+    left: 800px;
+    
+}
+.u button{
+    background-color: rgba(239, 53, 115);
+    color: aliceblue;
+    border: 2px solid pink;
+    height: 40px;
+    width: 150px;
+    padding: 4px;
+    font-size: bold;
+}
+
+.pa1{
+    position: absolute;
+    top: 450px;
+    width:45%;
+    font-display: flex;
+}
+.pa2{
+    position: absolute;
+    top: 450px;
+    width:40%;
+    font-display: flex;
+    right: 0%;
+}
+.search-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end; 
+    border: 1px solid #ccc; /* Border for the search bar */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px; /* Padding inside the search bar */
+    max-width: 400px; /* Maximum width */
+    margin: 20px auto; /* Center the search bar */
+}
+
+.search-bar input {
+    border: none; /* Remove border from input */
+    outline: none; /* Remove outline on focus */
+    flex: 1; /* Allow input to grow */
+    padding: 10px; /* Padding for input */
+    font-size: 16px; /* Font size */
+}
+
+.search-bar button {
+    background-color: rgb(233, 14, 51); /* Button background */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 15px; /* Button padding */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.search-bar button:hover {
+    background-color:rgb(112, 5, 23); /* Darker green on hover */
+}
+
+.block{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 250px;
+
+}
+.box1{
+    background-color: #f7f8f1;
+    width: 800px;
+    height: 250px;
+}
+.block .box1 h1{
+     font-size: 50px;
+     padding-left: 150px;
+     padding-top: 100px;
+     text-transform: uppercase;
+}
+.box2{
+    background-color: #666161;
+    width: 1000px;
+    height: 250px;
+}
+.box2 h1{
+    color: white;
+    word-spacing: 5px;
+    font-size: 40px;
+     padding-left: 100px;
+     padding-top: 100px;
+     text-transform: uppercase;
+}
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    margin-bottom:10px ;
+    width: 100%;
+    background-color:whitesmoke;
+} 
+
+.products {
+    padding: 2em;
+    position: relative;
+  
+}
+
+.product {
+    background-color: #f7f7f7;
+    padding: 1em;
+    height: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: whitesmoke;
+    width:80%;
+    margin: 10px;
+}
+
+.product img {
+    
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    width: 90%;
+    
+}
+.product h3 {
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+.product p{
+  font-size: 20px;
+  position: absolute;
+  top: 60px;
+  margin-right: 20px;
+  color: red;
+  
+
+}
+.product h6 {
+    font-size: 15px;
+    margin-top: 10px;
+    text-align: center;
+    color: gray;
+}
+.product h3:hover{
+    color: rgb(207, 10, 75);
+}
+.sec{
+    height: 30vh;
+    position: relative;
+    background-color: #ccc;
+}
+.sec h1{
+    text-transform: uppercase;
+    text-align: center;
+   
+
+}
+.sec img{
+    height: 40px; 
+    position: absolute;
+    right:50%;
+}
+.sec p{
+    text-transform: uppercase;
+    position:absolute;
+    top:50%;
+    padding-left: 10%;
+}
+.scc{
+    height: 30vh;
+    position: relative;
+    background-color: #ccc;
+}
+.scc h1{
+    text-transform: uppercase;
+    text-align: center;
+   
+
+}
+.scc img{
+    height: 40px; 
+    position: absolute;
+    right:50%;
+}
+.scc p{
+    text-transform: uppercase;
+    position:absolute;
+    top:50%;
+    padding-left: 10%;
+}
+footer .container{
+    background-color: rgb(90, 76, 88);
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 100px;
+}
+.footer-col ul{
+    list-style: none;
+}
+
+.footer-col h4{
+    color: white;
+    margin-bottom: 25px;
+    font-size: 22px;
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.footer-col h4::before{
+    content: '';
+    width: 70px;
+    height: 2px;
+    position: absolute;
+    background-color: #e91e64;
+    bottom: -10px;
+}
+
+.footer-col ul li{
+    padding: 10px 0;
+}
+.footer-col ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+.footer-col ul li a:hover{
+    opacity: 1;
+}
+.footer-col input{
+    border: none;
+    width: 250px;
+    height: 45px;
+    display: block;
+    padding-left: 20px;
+    margin: 14px 0;
+}
+
+.footer-col .inputSubmit{
+    padding: 0px 20px;
+    background-color: #e91e64;
+    border: none;
+    color: white;
+}
+.col p{
+    color: white;
+}
+
+
